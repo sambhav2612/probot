@@ -1,4 +1,4 @@
-var issue_msg = require('/issue_msg.js');
+var issue_msg = require('issue_msg.js');
 
 module.exports = robot => {
     robot.on('issues.opened', async context => {
