@@ -7,10 +7,13 @@
   "repository": "https://github.com/sambhav2612/probot.git",
   "scripts": {
     "start": "probot run ./index.js",
-    "test": "jest && standard"
+    "test": "jest && standard",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "probot": "^5.0.0"
+    "probot": "^5.0.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "jest": "^21.2.1",
@@ -25,5 +28,6 @@
     "env": [
       "jest"
     ]
-  }
+  },
+  "snyk": true
 }
